@@ -1,0 +1,62 @@
+{
+  "RESTRAINT": 1.3,
+  "RESTRAINT_DISADV": 0.7692307692307692,
+  "DOT_APPLIES_RESTRAINT": true,
+  "TRUE_DMG_IGNORES_ARMOR": true,
+  "TRUE_DMG_ROUND_CAP_RATIO": 0.08,
+  "WIND_BONUS_SEGMENT": 20,
+  "MAX_EXTRA_HIT": 2,
+  "MAX_DOT_STACK": 5,
+  "MAX_STUN_ROUND": 3,
+  "MAX_SHIELD_MULT": 2.0,
+  "GUARD_MAX_ROUND": 30,
+  "STAT_CAP": {
+    "atk": 200,
+    "def": 200
+  },
+  "SAME_SYS_SOFT_CAP": 4,
+  "FLEET_CAPACITY": 10,
+  "FLEET_SLOTS": 5,
+  "COST_BY_RARITY": {
+    "R": 1,
+    "SR": 2,
+    "SSR": 3,
+    "UR": 4
+  },
+  "STAMINA_MAX": 120,
+  "STAMINA_REFRESH": "daily_00_clear",
+  "POI_DROP_CREW_RATE": 0.0020833333333333333,
+  "POI_DROP_SHIP_RATE": 0.0010416666666666667,
+  "POI_RESOURCE_BASE": 500,
+  "ISLAND_DAILY_YIELD": 120,
+  "SEASON_DAYS": 90,
+  "TYPE_COEF": {
+    "physical": {
+      "light": 1.0,
+      "heavy": 0.7,
+      "shield": 1.15
+    },
+    "burn": {
+      "light": 1.2,
+      "heavy": 0.85,
+      "shield": 1.0
+    },
+    "energy": {
+      "light": 1.1,
+      "heavy": 0.8,
+      "shield": 0.6
+    }
+  },
+  "RING": {
+    "flame": "ironwall",
+    "ironwall": "wind",
+    "wind": "tide",
+    "tide": "flame"
+  },
+  "SYSTEM_COLORS": {
+    "flame": "#E85D04",
+    "ironwall": "#ADB5BD",
+    "wind": "#4CC9F0",
+    "tide": "#7B2CBF"
+  }
+}

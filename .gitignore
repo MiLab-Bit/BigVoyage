@@ -1,0 +1,17 @@
+# Godot / Git
+.godot/
+*.translation
+export_presets.cfg
+*.import
+!assets/icon.svg
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
+
+# Local saves / dumps
+*.log
+user://

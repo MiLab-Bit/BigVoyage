@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "note": "Demo 默认旗舰；armorType 进 TYPE_COEF"
+  },
+  "ships": [
+    {
+      "id": "SHIP_RAFT",
+      "name": "启航木筏",
+      "armorType": "light",
+      "armor": 20,
+      "speed": 40,
+      "capacity": 10,
+      "atkMod": 1.0,
+      "defMod": 1.0
+    },
+    {
+      "id": "SHIP_IRON",
+      "name": "霜锚巡洋",
+      "armorType": "heavy",
+      "armor": 55,
+      "speed": 28,
+      "capacity": 10,
+      "atkMod": 1.0,
+      "defMod": 1.08
+    },
+    {
+      "id": "SHIP_FLAME",
+      "name": "炽帆快舰",
+      "armorType": "light",
+      "armor": 25,
+      "speed": 48,
+      "capacity": 10,
+      "atkMod": 1.06,
+      "defMod": 1.0
+    }
+  ]
+}

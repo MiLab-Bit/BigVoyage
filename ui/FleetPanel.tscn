@@ -1,0 +1,107 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ui/FleetPanel.gd" id="1"]
+
+[node name="FleetPanel" type="CanvasLayer"]
+layer = 18
+script = ExtResource("1")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.04, 0.08, 0.7)
+
+[node name="Center" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Center"]
+custom_minimum_size = Vector2(900, 560)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Center/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 14
+
+[node name="VBoxRoot" type="VBoxContainer" parent="Center/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Center/Panel/Margin/VBoxRoot"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "舰队编成 · COST / 槽位约束"
+
+[node name="HBox" type="HBoxContainer" parent="Center/Panel/Margin/VBoxRoot"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="Owned" type="VBoxContainer" parent="Center/Panel/Margin/VBoxRoot/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="Lbl" type="Label" parent="Center/Panel/Margin/VBoxRoot/HBox/Owned"]
+layout_mode = 2
+text = "持有船员（双击加入）"
+
+[node name="List" type="ItemList" parent="Center/Panel/Margin/VBoxRoot/HBox/Owned"]
+layout_mode = 2
+size_flags_vertical = 3
+allow_reselect = true
+
+[node name="BtnAdd" type="Button" parent="Center/Panel/Margin/VBoxRoot/HBox/Owned"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+text = "加入编队 →"
+
+[node name="Fleet" type="VBoxContainer" parent="Center/Panel/Margin/VBoxRoot/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="Cost" type="Label" parent="Center/Panel/Margin/VBoxRoot/HBox/Fleet"]
+layout_mode = 2
+text = "COST 0 / 10"
+
+[node name="List" type="ItemList" parent="Center/Panel/Margin/VBoxRoot/HBox/Fleet"]
+layout_mode = 2
+size_flags_vertical = 3
+allow_reselect = true
+
+[node name="BtnRemove" type="Button" parent="Center/Panel/Margin/VBoxRoot/HBox/Fleet"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+text = "← 移出编队"
+
+[node name="Hint" type="RichTextLabel" parent="Center/Panel/Margin/VBoxRoot"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+text = "提示"
+
+[node name="Btns" type="HBoxContainer" parent="Center/Panel/Margin/VBoxRoot"]
+layout_mode = 2
+alignment = 2
+theme_override_constants/separation = 12
+
+[node name="Close" type="Button" parent="Center/Panel/Margin/VBoxRoot/Btns"]
+custom_minimum_size = Vector2(100, 40)
+layout_mode = 2
+text = "关闭"
+
+[node name="Save" type="Button" parent="Center/Panel/Margin/VBoxRoot/Btns"]
+custom_minimum_size = Vector2(140, 40)
+layout_mode = 2
+text = "保存编队"

@@ -1,0 +1,7 @@
+{
+  "network": "testnet",
+  "created": "ISO-8601 timestamp from create script",
+  "warning": "DEV ONLY — never commit real privateKey",
+  "privateKey": "APrivateKey1...",
+  "address": "aleo1..."
+}

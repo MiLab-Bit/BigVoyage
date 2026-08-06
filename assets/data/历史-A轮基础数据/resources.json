@@ -1,0 +1,134 @@
+{
+  "_meta": {
+    "version": "v0.2",
+    "note": "资源分层已冻结：Demo 只实现 strategic 单池；全量四分池（wood/rope/strategic_ore/spice）在 P1+ 拆分，日总量守恒映射到 Demo 单池。",
+    "drop_semantics": "Reading 2（裁决登记册 [B4] 已决，2026-08-06 采 A）：drop_rate = 单次独立伯努利最终逐次概率（结算口径，冻结值）；poi_yield.*.weight = 批量开箱构成份额（统计口径，仅展示/统计），非逐次门槛。B 口径（行为用 weight 分域）因 Σweight=1.85≠1 数学不自洽已作废。"
+  },
+  "resource_layers": {
+    "demo": [
+      "strategic"
+    ],
+    "full": [
+      "wood",
+      "rope",
+      "strategic_ore",
+      "spice"
+    ],
+    "mapping": "full 四分池日产之和 ≡ demo strategic 日产目标；Demo 不分别记账"
+  },
+  "resources": [
+    {
+      "id": "strategic",
+      "name": "战略资源",
+      "type": "strategic_pool",
+      "daily_target": 20000,
+      "sink": [
+        "ship_build",
+        "tech",
+        "island_defense"
+      ],
+      "note": "Demo 单池真源；= full 四分池聚合。POI 掉落只进本池。"
+    },
+    {
+      "id": "tide",
+      "name": "$TIDE",
+      "type": "token",
+      "net_issuance": "<=0",
+      "sink": [
+        "gacha",
+        "market_fee"
+      ],
+      "note": "净发行≤0，经济不崩护栏；=航海晶"
+    },
+    {
+      "id": "stamina",
+      "name": "体力",
+      "type": "soft",
+      "max": 120,
+      "refresh": "daily_00_clear",
+      "regen_per_min_demo_only": 1,
+      "sink": [
+        "poi_explore",
+        "battle"
+      ],
+      "note": "正式=日刷清空；regen 仅 DEMO_ONLY"
+    },
+    {
+      "id": "crew_card",
+      "name": "船员卡",
+      "type": "nft",
+      "drop_rate": "1/480",
+      "source": [
+        "poi",
+        "gacha"
+      ],
+      "note": "drop_rate = 最终逐次概率（Reading 2，[B4] 已决；结算口径）；数值冻结 1/480"
+    },
+    {
+      "id": "ship_blueprint",
+      "name": "船图纸",
+      "type": "nft",
+      "drop_rate": "1/960",
+      "source": [
+        "poi"
+      ],
+      "note": "drop_rate = 最终逐次概率（Reading 2，[B4] 已决；结算口径）；数值冻结 1/960"
+    },
+    {
+      "id": "wood",
+      "name": "木材",
+      "type": "basic",
+      "phase": "full",
+      "note": "P1+；Demo 折算进 strategic"
+    },
+    {
+      "id": "rope",
+      "name": "麻绳",
+      "type": "basic",
+      "phase": "full",
+      "note": "P1+；Demo 折算进 strategic"
+    },
+    {
+      "id": "strategic_ore",
+      "name": "战略矿产",
+      "type": "strategic",
+      "phase": "full",
+      "note": "寒铁/星银/丝绸等；Demo 折算进 strategic"
+    },
+    {
+      "id": "spice",
+      "name": "香料",
+      "type": "trade",
+      "phase": "full",
+      "note": "P1+ 贸易；Demo 折算进 strategic"
+    }
+  ],
+  "poi_yield": {
+    "crew": {
+      "crew_card": 1,
+      "weight": 0.6,
+      "note": "weight = 开箱构成份额（统计口径，Reading 2，[B4] 已决），非逐次门槛"
+    },
+    "resource": {
+      "strategic": 500,
+      "weight": 0.9,
+      "note": "weight = 开箱构成份额（统计口径），非逐次门槛"
+    },
+    "ship": {
+      "ship_blueprint": 1,
+      "weight": 0.3,
+      "note": "weight = 开箱构成份额（统计口径），非逐次门槛"
+    },
+    "boss": {
+      "strategic": 3000,
+      "crew_card": 2,
+      "note": "首占 boss 必给：strategic 3000 + 2 船员卡（保底），不走伯努利"
+    },
+    "crew_ur": {
+      "crew_card": 1,
+      "rarity_bias": "UR",
+      "weight": 0.05,
+      "note": "weight = crew 命中后 UR 偏向构成份额；UR 构成 = 0.05/(0.6+0.05) = 7.7%（[B4] 已决）"
+    }
+  }
+}

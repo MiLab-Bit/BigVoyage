@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "version": "v0.3",
+    "note": "玩法压测校准：同海邻港有正利；跨海/终核有溢价但仍可控"
+  },
+  "goods": ["timber", "spice", "iron", "silk"],
+  "ports": {
+    "FR_01": {"timber": 12, "spice": 18, "iron": 20, "silk": 36},
+    "FR_02": {"timber": 14, "spice": 20, "iron": 16, "silk": 38},
+    "FR_06": {"timber": 11, "spice": 30, "iron": 14, "silk": 48},
+    "FR_09": {"timber": 13, "spice": 26, "iron": 18, "silk": 44},
+    "FR_12": {"timber": 10, "spice": 40, "iron": 22, "silk": 62},
+    "AB_01": {"timber": 16, "spice": 17, "iron": 24, "silk": 34},
+    "AB_06": {"timber": 15, "spice": 15, "iron": 28, "silk": 32},
+    "AB_09": {"timber": 17, "spice": 14, "iron": 34, "silk": 55},
+    "BL_01": {"timber": 8, "spice": 32, "iron": 12, "silk": 50},
+    "BL_06": {"timber": 7, "spice": 36, "iron": 10, "silk": 56},
+    "BL_09": {"timber": 6, "spice": 44, "iron": 12, "silk": 70},
+    "TW_01": {"timber": 18, "spice": 20, "iron": 18, "silk": 28},
+    "TW_06": {"timber": 20, "spice": 18, "iron": 16, "silk": 26},
+    "TW_09": {"timber": 24, "spice": 16, "iron": 15, "silk": 22}
+  },
+  "freight_per_hop": 8,
+  "risk_flat": 4,
+  "freight_by_sea": {
+    "frozen": 8,
+    "abyss": 11,
+    "blaze": 10,
+    "tradewind": 6
+  },
+  "risk_by_sea": {
+    "frozen": 4,
+    "abyss": 8,
+    "blaze": 7,
+    "tradewind": 3
+  },
+  "cross_sea_freight_mult": 1.2,
+  "cross_sea_risk_mult": 1.25,
+  "endgame_ports": ["FR_12", "AB_09", "BL_09", "TW_09"],
+  "endgame_bonus": 1.18,
+  "triangle_three_sea_bonus": 1.15
+}

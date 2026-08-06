@@ -1,0 +1,12 @@
+{
+  "_schema_version": "proposal-1",
+  "_purpose": "assets/data/data/ships.json 当前缺失；本文件即其完整内容（3 船）。来源为 verify6.py 使用的真实快照。",
+  "_source": "verify6.py SHIPS 真实数据（assets/data 分支快照）。",
+  "_chain": "ships 进入战斗 ruleset；修改即改变战斗结果，须纳入 ruleset_hash 锁定（10-经济 §7 / GDD-03 §8 BLK-5）。",
+  "ships": {
+    "SHIP_RAFT":  { "name_zh": "木筏", "type": "light", "armor": 20, "atkMod": 1.00, "defMod": 1.00 },
+    "SHIP_IRON":  { "name_zh": "铁甲", "type": "heavy", "armor": 55, "atkMod": 1.00, "defMod": 1.08 },
+    "SHIP_FLAME": { "name_zh": "火船", "type": "light", "armor": 25, "atkMod": 1.06, "defMod": 1.00 }
+  },
+  "_schema_note": "字段语义（对齐当前战斗模型 verify6.build）：type = 目标分类（light/heavy → TC 伤害表查表键）；armor = 平铺到每张上场单位的固定防御加成（dfv*defMod + armor）；atkMod/defMod = 攻击/防御乘子（定点 u16）。⚠ 10-经济 §7 描述 Blueprint 含 capacity(u8)，但当前模型未使用 capacity —— 若工程 Schema 需要 capacity 字段，合入前请与本文对齐（容量可能影响编队槽位/出航，属独立机制，不冲突战斗公式）。"
+}

@@ -1,0 +1,14 @@
+{
+  "_meta": {"version": "v0.1", "inherit_across_season": true},
+  "nodes": [
+    {"id": "T1_hull", "tier": 1, "name": "龙骨加固", "cost": 400, "req": [], "effect": {"def_mult": 1.05}, "desc": "全舰队防御 +5%"},
+    {"id": "T1_sail", "tier": 1, "name": "帆索学", "cost": 400, "req": [], "effect": {"spd_hint": 1}, "desc": "出航体感加速（演出）"},
+    {"id": "T1_trade", "tier": 1, "name": "市舶司", "cost": 500, "req": [], "effect": {"trade_mult": 1.1}, "desc": "贸易收益 +10%"},
+    {"id": "T2_armor", "tier": 2, "name": "铁壁工学", "cost": 1200, "req": ["T1_hull"], "effect": {"ironwall_atk": 1.08}, "desc": "铁壁攻击 +8%"},
+    {"id": "T2_flame", "tier": 2, "name": "炽油工艺", "cost": 1200, "req": ["T1_hull"], "effect": {"flame_dot": 1.1}, "desc": "烈焰 DoT +10%"},
+    {"id": "T2_council", "tier": 2, "name": "氏族议会", "cost": 1500, "req": ["T1_trade"], "effect": {"alliance_cap": 5}, "desc": "联盟成员上限 +5"},
+    {"id": "T3_echo", "tier": 3, "name": "深渊回响", "cost": 3000, "req": ["T2_flame", "T2_armor"], "effect": {"control_dur": 1.3}, "desc": "控制时长 +30%"},
+    {"id": "T3_wind", "tier": 3, "name": "信风连射", "cost": 3000, "req": ["T1_sail", "T2_armor"], "effect": {"wind_seg": 1.15}, "desc": "疾风多段 +15%"},
+    {"id": "T4_tide_core", "tier": 4, "name": "潮汐之核共鸣", "cost": 8000, "req": ["T3_echo"], "effect": {"tide_shield": 1.2}, "desc": "潮汐护盾 +20%（需占 Boss 岛）"}
+  ]
+}

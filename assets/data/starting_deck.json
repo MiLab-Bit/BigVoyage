@@ -1,0 +1,25 @@
+{
+  "ship_id": "SHIP_RAFT",
+  "crew_ids": [
+    "IRON_R_01",
+    "IRON_R_02",
+    "FLAME_R_01",
+    "WIND_R_01",
+    "TIDE_R_01"
+  ],
+  "owned_cards": [
+    "IRON_R_01",
+    "IRON_R_02",
+    "IRON_SR_01",
+    "FLAME_R_01",
+    "FLAME_R_02",
+    "FLAME_SR_01",
+    "WIND_R_01",
+    "WIND_R_02",
+    "TIDE_R_01",
+    "TIDE_R_02",
+    "FLAME_SSR_01",
+    "IRON_SSR_01"
+  ],
+  "note": "新手铁壁教学队 + 克制提示用烈焰/疾风/潮汐各一张"
+}

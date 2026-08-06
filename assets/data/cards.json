@@ -1,0 +1,440 @@
+{
+  "_meta": {
+    "version": "v0.3",
+    "count": 20,
+    "systems": [
+      "flame",
+      "ironwall",
+      "wind",
+      "tide"
+    ],
+    "design_note": "archetype 化（非稀有度梯度）。稀有度=archetype 完成度/扩展技，不决定功能。identity=一句话动词；synergy=协同钩子；strong_against/countered_by=可读性(见战斗设计 §7.11)。数值为可验证基线 PLAYTEST_KNOB。",
+    "system_ring": "烈焰→铁壁→疾风→潮汐→烈焰（顺环克制 +30%）",
+    "name_ssot": "正式显示名以 name 为准；alias=曾用机制代号"
+  },
+  "cards": [
+    {
+      "id": "FLAME_R_01",
+      "name": "火药学徒",
+      "system": "flame",
+      "archetype": "焚烧者(Burn DPS)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 40,
+      "def": 25,
+      "spd": 50,
+      "hp": 200,
+      "identity": "点燃单体，持续灼烧",
+      "skill": {
+        "name": "余烬",
+        "type": "dot",
+        "desc": "攻击附加燃烧，3回合每回合 baseAtk×0.15"
+      },
+      "synergy": "与任意烈焰互燃(DoT叠加更快清场)",
+      "strong_against": "ironwall",
+      "countered_by": "tide"
+    },
+    {
+      "id": "FLAME_R_02",
+      "name": "燎帆炮手",
+      "system": "flame",
+      "archetype": "溅射者(Splash)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 45,
+      "def": 22,
+      "spd": 48,
+      "hp": 190,
+      "identity": "溅射邻格，范围引燃",
+      "skill": {
+        "name": "迸射",
+        "type": "dot",
+        "desc": "溅射焚烧，主目标+邻格 baseAtk×0.10 DoT"
+      },
+      "synergy": "焚海(AoE)前置，铺燃烧面",
+      "strong_against": "ironwall",
+      "countered_by": "tide"
+    },
+    {
+      "id": "FLAME_SR_01",
+      "name": "烈焰船匠",
+      "system": "flame",
+      "archetype": "火药坊(Enabler)",
+      "rarity": "SR",
+      "cost": 2,
+      "atk": 70,
+      "def": 40,
+      "spd": 55,
+      "hp": 340,
+      "identity": "为烈焰友军+攻击",
+      "skill": {
+        "name": "火药坊",
+        "type": "buff",
+        "desc": "flame 体系友军 atkMod +0.15"
+      },
+      "synergy": "体系胶水，放大全队烈焰输出",
+      "strong_against": "ironwall",
+      "countered_by": "tide"
+    },
+    {
+      "id": "FLAME_SSR_01",
+      "name": "赤焰龙女",
+      "system": "flame",
+      "archetype": "焚海(AoE Burn)",
+      "rarity": "SSR",
+      "cost": 3,
+      "atk": 110,
+      "def": 60,
+      "spd": 72,
+      "hp": 580,
+      "identity": "范围焚烧清场",
+      "skill": {
+        "name": "焚海",
+        "type": "dot",
+        "desc": "范围燃烧，baseAtk×0.25 DoT 持续4回合"
+      },
+      "synergy": "多段burn链核心",
+      "strong_against": "ironwall",
+      "countered_by": "tide"
+    },
+    {
+      "id": "FLAME_UR_01",
+      "name": "祝融之裔",
+      "system": "flame",
+      "archetype": "大焚(Scale)",
+      "rarity": "UR",
+      "cost": 4,
+      "atk": 160,
+      "def": 95,
+      "spd": 85,
+      "hp": 900,
+      "identity": "全场焚烧无视轻甲",
+      "skill": {
+        "name": "大焚",
+        "type": "dot",
+        "desc": "全场燃烧 baseAtk×0.30，无视轻甲减伤"
+      },
+      "synergy": "体系核心，配合火药坊放大",
+      "strong_against": "ironwall",
+      "countered_by": "tide"
+    },
+    {
+      "id": "IRON_R_01",
+      "name": "铁砧卫",
+      "system": "ironwall",
+      "archetype": "壁垒(Tank)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 35,
+      "def": 45,
+      "spd": 38,
+      "hp": 260,
+      "identity": "自身硬抗前排",
+      "skill": {
+        "name": "铁壁",
+        "type": "armor",
+        "desc": "自身 effectiveArmor +30%"
+      },
+      "synergy": "盾墙护邻，山岳叠甲",
+      "strong_against": "wind",
+      "countered_by": "flame"
+    },
+    {
+      "id": "IRON_R_02",
+      "name": "玄铁壁垒",
+      "system": "ironwall",
+      "archetype": "盾墙(Guardian)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 33,
+      "def": 50,
+      "spd": 35,
+      "hp": 280,
+      "identity": "护邻友减伤",
+      "skill": {
+        "name": "盾墙",
+        "type": "armor",
+        "desc": "相邻友军 defMod +0.10"
+      },
+      "synergy": "山岳aura前置",
+      "strong_against": "wind",
+      "countered_by": "flame"
+    },
+    {
+      "id": "IRON_SR_01",
+      "name": "铁壁督战",
+      "system": "ironwall",
+      "archetype": "山岳(Aura)",
+      "rarity": "SR",
+      "cost": 2,
+      "atk": 60,
+      "def": 75,
+      "spd": 42,
+      "hp": 460,
+      "identity": "全队加甲",
+      "skill": {
+        "name": "山岳",
+        "type": "armor",
+        "desc": "全队 effectiveArmor +15%"
+      },
+      "synergy": "壁垒/盾墙增益源",
+      "strong_against": "wind",
+      "countered_by": "flame"
+    },
+    {
+      "id": "IRON_SSR_01",
+      "name": "山岳守望",
+      "system": "ironwall",
+      "archetype": "不破(Wall)",
+      "rarity": "SSR",
+      "cost": 3,
+      "atk": 95,
+      "def": 115,
+      "spd": 50,
+      "hp": 760,
+      "identity": "物理减伤反打",
+      "skill": {
+        "name": "不破",
+        "type": "armor",
+        "desc": "受到物理伤害 -25%"
+      },
+      "synergy": "要塞前置，顶在前排",
+      "strong_against": "wind",
+      "countered_by": "flame"
+    },
+    {
+      "id": "IRON_UR_01",
+      "name": "霜铁之王",
+      "system": "ironwall",
+      "archetype": "要塞(Fortress)",
+      "rarity": "UR",
+      "cost": 4,
+      "atk": 140,
+      "def": 170,
+      "spd": 55,
+      "hp": 1150,
+      "identity": "全队铁壁免疫穿透",
+      "skill": {
+        "name": "fortress",
+        "type": "armor",
+        "desc": "全队 effectiveArmor +25%，pierce 免疫"
+      },
+      "synergy": "核心坦克，配合不破",
+      "strong_against": "wind",
+      "countered_by": "flame",
+      "alias": "巨岩要塞"
+    },
+    {
+      "id": "WIND_R_01",
+      "name": "信风斥候",
+      "system": "wind",
+      "archetype": "疾袭(Skirmisher)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 42,
+      "def": 24,
+      "spd": 65,
+      "hp": 190,
+      "identity": "抢速额外出手",
+      "skill": {
+        "name": "疾袭",
+        "type": "multi",
+        "desc": "spd 超阈值额外 +1 段"
+      },
+      "synergy": "连射铺多段",
+      "strong_against": "tide",
+      "countered_by": "ironwall"
+    },
+    {
+      "id": "WIND_R_02",
+      "name": "疾羽弓手",
+      "system": "wind",
+      "archetype": "连射(Multistrike)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 44,
+      "def": 22,
+      "spd": 62,
+      "hp": 185,
+      "identity": "基础2段输出",
+      "skill": {
+        "name": "连射",
+        "type": "multi",
+        "desc": "基础 2 段攻击"
+      },
+      "synergy": "破阵前置",
+      "strong_against": "tide",
+      "countered_by": "ironwall"
+    },
+    {
+      "id": "WIND_SR_01",
+      "name": "疾风游骑",
+      "system": "wind",
+      "archetype": "长驱(Cavalry)",
+      "rarity": "SR",
+      "cost": 2,
+      "atk": 72,
+      "def": 38,
+      "spd": 80,
+      "hp": 330,
+      "identity": "提速+额外出手",
+      "skill": {
+        "name": "长驱",
+        "type": "multi",
+        "desc": "spd +15，额外 +1 段"
+      },
+      "synergy": "毁风前置",
+      "strong_against": "tide",
+      "countered_by": "ironwall"
+    },
+    {
+      "id": "WIND_SSR_01",
+      "name": "长风破阵",
+      "system": "wind",
+      "archetype": "破阵(Breaker)",
+      "rarity": "SSR",
+      "cost": 3,
+      "atk": 115,
+      "def": 58,
+      "spd": 95,
+      "hp": 560,
+      "identity": "3段破甲爆发",
+      "skill": {
+        "name": "破阵",
+        "type": "multi",
+        "desc": "3 段，破甲穿透 +10%"
+      },
+      "synergy": "锁定爆发(配潮汐控场)",
+      "strong_against": "tide",
+      "countered_by": "ironwall"
+    },
+    {
+      "id": "WIND_UR_01",
+      "name": "追风之翼",
+      "system": "wind",
+      "archetype": "毁风(Storm)",
+      "rarity": "UR",
+      "cost": 4,
+      "atk": 165,
+      "def": 90,
+      "spd": 110,
+      "hp": 880,
+      "identity": "4段+阈值叠加",
+      "skill": {
+        "name": "毁风",
+        "type": "multi",
+        "desc": "4 段，每超阈值再 +1（上限+2）"
+      },
+      "synergy": "核心输出，配合潮控",
+      "strong_against": "tide",
+      "countered_by": "ironwall",
+      "alias": "飓风之翼"
+    },
+    {
+      "id": "TIDE_R_01",
+      "name": "潮歌祭司",
+      "system": "tide",
+      "archetype": "潮涌(Shielder)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 38,
+      "def": 30,
+      "spd": 52,
+      "hp": 210,
+      "identity": "为低血友军上盾",
+      "skill": {
+        "name": "潮涌",
+        "type": "shield",
+        "desc": "为最低 hp 友军上能量盾 baseAtk×0.5"
+      },
+      "synergy": "渊主前置",
+      "strong_against": "flame",
+      "countered_by": "wind"
+    },
+    {
+      "id": "TIDE_R_02",
+      "name": "渊潮使",
+      "system": "tide",
+      "archetype": "回响(Controller)",
+      "rarity": "R",
+      "cost": 1,
+      "atk": 40,
+      "def": 28,
+      "spd": 50,
+      "hp": 205,
+      "identity": "概率眩晕控场",
+      "skill": {
+        "name": "回响",
+        "type": "control",
+        "desc": "15% 概率眩晕1回合"
+      },
+      "synergy": "渊鸣强化",
+      "strong_against": "flame",
+      "countered_by": "wind"
+    },
+    {
+      "id": "TIDE_SR_01",
+      "name": "深渊回响",
+      "system": "tide",
+      "archetype": "渊鸣(Enchanter)",
+      "rarity": "SR",
+      "cost": 2,
+      "atk": 68,
+      "def": 48,
+      "spd": 58,
+      "hp": 350,
+      "identity": "强化控制",
+      "skill": {
+        "name": "渊鸣",
+        "type": "control",
+        "desc": "control prob +10%，持续+1"
+      },
+      "synergy": "低语前置",
+      "strong_against": "flame",
+      "countered_by": "wind"
+    },
+    {
+      "id": "TIDE_SSR_01",
+      "name": "海皇低语",
+      "system": "tide",
+      "archetype": "低语(Silencer)",
+      "rarity": "SSR",
+      "cost": 3,
+      "atk": 108,
+      "def": 70,
+      "spd": 74,
+      "hp": 600,
+      "identity": "沉默禁技能",
+      "skill": {
+        "name": "低语",
+        "type": "control",
+        "desc": "30% 概率沉默2回合（禁技能）"
+      },
+      "synergy": "锁定爆发(配疾风多段)",
+      "strong_against": "flame",
+      "countered_by": "wind"
+    },
+    {
+      "id": "TIDE_UR_01",
+      "name": "波塞冬·深渊之主",
+      "system": "tide",
+      "archetype": "渊主(Leviathan)",
+      "rarity": "UR",
+      "cost": 4,
+      "atk": 158,
+      "def": 105,
+      "spd": 88,
+      "hp": 960,
+      "identity": "全队盾+控场链",
+      "skill": {
+        "name": "渊主",
+        "type": "shield",
+        "desc": "全队能量盾 baseAtk×0.6，control prob +15%"
+      },
+      "synergy": "核心控场，配合毁风",
+      "strong_against": "flame",
+      "countered_by": "wind",
+      "alias": "渊海之主"
+    }
+  ]
+}

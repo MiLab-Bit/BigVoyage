@@ -1,0 +1,31 @@
+{
+  "_schema_version": "proposal-1",
+  "_purpose": "assets/data/data/guards.json 编成/HP 缺口补丁。覆盖 FR_02~FR_12（FR_01 为起点岛，无守卫，不在列）。",
+  "_source": "verify6.py GUARDS + ISL_HP 实测标定快照（即产出 GDD-03 §6.4 胜率：light 93.6%/99.1%、heavy 0.2%/60.1% 的那一版）。",
+  "_note": "🔴 与 GDD-03 §6.4 抽象表「light = 2 单位」不一致：本文件采用 verify6 实测用的 **3 单位 light** 编成（其胜率数据即来自此快照）。GDD-03 §6.4 表的 2 单位 light 是旧抽象规格。合入前需主理人统一用哪一版快照（README 已知阻塞项）。",
+  "_chain": "guards 进入战斗 ruleset；修改即改变守卫战结果，须纳入 ruleset_hash 锁定（10-经济 §7 / GDD-03 §8 BLK-5）。守卫战败 = 无主权 = 无日产，是 GDD-04 日产的前提。",
+  "_decisions": {
+    "Q5": "★ 已决（2026-08-02）：FR_09.hp_mult 1.35 -> 1.20。落点即本文件。⚠ 工程侧 assets/data/data/guards.json 当前仍为 1.35 —— 属**已知不一致**，须以本文件为准合入，详见 data-spec/README.md「工程侧一致性待办」。",
+    "_scope": "hp_mult 是**守卫数据值**，不是战斗常量：它不改变伤害公式，只改变守卫单位的 HP 基数。因此 **不进 ruleset_hash 的常量清单**（但 guards 数据本身仍在 ruleset 数据快照内，改值会改变既往战报可复算性——见 _chain）。",
+    "_unaffected": "本项只作用于 FR_09（冻潮门, heavy）。FR_12（渊眼, boss）仍维持 hp_mult 1.80（本文件）/ 1.35（GDD-02 §6.4 cost12 终配口径），不受影响。"
+  },
+  "guards": {
+    "FR_02": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_01", "IRON_R_02", "IRON_SR_01"] },
+    "FR_03": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_01", "IRON_R_02", "WIND_R_01"] },
+    "FR_04": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_01", "IRON_SR_01", "IRON_SSR_01"] },
+    "FR_05": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_02", "IRON_SR_01", "TIDE_R_01"] },
+    "FR_06": { "tier": "heavy", "total_hp": 2400, "hp_mult": 1.35, "composition": ["IRON_SSR_01", "IRON_SR_01", "IRON_R_01", "IRON_R_02", "FLAME_R_01"] },
+    "FR_07": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_01", "WIND_R_02", "IRON_SR_01"] },
+    "FR_08": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_02", "IRON_SSR_01", "TIDE_R_02"] },
+    "FR_09": { "tier": "heavy", "total_hp": 2400, "hp_mult": 1.20, "composition": ["IRON_SSR_01", "IRON_SR_01", "IRON_UR_01", "IRON_R_01", "WIND_R_01"], "_hp_mult_note": "★ Q5 已决（2026-08-02，用户拍板）：1.35 -> 1.20。收窄 FR_06→FR_09 难度断崖。纯数据补丁，不进 ruleset_hash。" },
+    "FR_10": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_SR_01", "IRON_R_01", "IRON_R_02"] },
+    "FR_11": { "tier": "light", "total_hp": 800, "hp_mult": 1.00, "composition": ["IRON_R_01", "WIND_SR_01", "IRON_SR_01"] },
+    "FR_12": { "tier": "boss", "total_hp": 5000, "hp_mult": 1.80, "composition": ["IRON_UR_01", "IRON_SSR_01", "IRON_SR_01", "TIDE_SSR_01", "WIND_SSR_01"] }
+  },
+  "_calibration": {
+    "_stale_note": "⚠ 下列 light/heavy 胜率是 verify6 快照（SEG_DECAY=0.60 / ARMOR_CAP=0.90 / FR_09 hp_mult=1.35）口径，**早于 D3 与 Q5**。终配口径实测见 `_scratch/out_lock_b.txt`（SEG_DECAY=0.40 / ARMOR_CAP=0.80 / DEF_COEF=0.30 / FR_09 hp_mult=1.20）。",
+    "light_start_winrate": 0.936, "light_full_winrate": 0.991,
+    "heavy_start_winrate": 0.002, "heavy_full_winrate": 0.601,
+    "boss_note": "BOSS_HP=5000 与 GUARD_MAX_ROUND=30 在当前卡池下数学不相容（GDD-03 §6.5 B3）：全收集 0/11653 可胜。需养成轴（方案1）或不计入 D4 必过（方案3）。"
+  }
+}

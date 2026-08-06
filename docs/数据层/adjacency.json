@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "file": "数据层/adjacency.json",
+    "layer": "L1",
+    "version": "0.1-stub",
+    "status": "初版待扩充",
+    "scope": "Demo 切片 = 冻洋 12 岛（FR_01–FR_12）。全量 36 岛邻接图待 Phase E 生产，见裁决登记册 [B5]/[N2]。",
+    "created": "2026-08-05",
+    "author": "严守真（quality-lead）· Phase B 矛盾清零 [N2]",
+    "derived_from": "玩法与系统/GDD/GDD-01-探索与POI.md §4.1 海图拓扑 ASCII 图（该图为当前唯一显式邻接来源）",
+    "invariants": [
+      "双向对称：若 a 在 adjacency[b] 中，则 b 必在 adjacency[a] 中",
+      "无自环",
+      "连通（单连通分量，12/12 可达）",
+      "FR_12（Boss）为叶节点，度=1"
+    ],
+    "verified": {
+      "symmetric": true,
+      "no_self_loop": true,
+      "connected": true,
+      "node_count": 12,
+      "edge_count": 16,
+      "degree_max": 4,
+      "degree_max_nodes": ["FR_05", "FR_06"],
+      "degree_min_node": "FR_12",
+      "shortest_path_FR_01_to_FR_12": 6
+    },
+    "reconciled_2026_08_05": [
+      "GDD-01 §4.1 原写「分支度 平均 2.5」与本图推导值 2.67 不符 → 已回写 GDD-01 为 2.67（16 边 / 12 节点）。",
+      "GDD-01 §4.1 原写「另有 2 条等长并行路径」，实测 6 跳等长路径共 4 条 → 已回写 GDD-01 为「另有 3 条」。",
+      "本 stub 严格以 GDD-01 §4.1 ASCII 拓扑图为准，未擅自增删任何边。"
+    ]
+  },
+  "adjacency": {
+    "FR_01": ["FR_02", "FR_04"],
+    "FR_02": ["FR_01", "FR_03", "FR_05"],
+    "FR_03": ["FR_02", "FR_06", "FR_07"],
+    "FR_04": ["FR_01", "FR_05"],
+    "FR_05": ["FR_02", "FR_04", "FR_06", "FR_09"],
+    "FR_06": ["FR_03", "FR_05", "FR_08", "FR_10"],
+    "FR_07": ["FR_03", "FR_08"],
+    "FR_08": ["FR_06", "FR_07", "FR_11"],
+    "FR_09": ["FR_05", "FR_10"],
+    "FR_10": ["FR_06", "FR_09", "FR_11"],
+    "FR_11": ["FR_08", "FR_10", "FR_12"],
+    "FR_12": ["FR_11"]
+  }
+}

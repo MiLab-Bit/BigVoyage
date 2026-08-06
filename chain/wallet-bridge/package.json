@@ -1,0 +1,15 @@
+{
+  "name": "bv-wallet-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Provable SDK wallet bridge for BigVoyage Sidecar",
+  "scripts": {
+    "start": "node server.mjs",
+    "account": "node scripts/create_account.mjs",
+    "fund-hint": "node scripts/fund_hint.mjs"
+  },
+  "dependencies": {
+    "@provablehq/sdk": "^0.10.0"
+  }
+}

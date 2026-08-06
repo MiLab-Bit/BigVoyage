@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>BigVoyage LiveOps Admin</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background:#0b1220; color:#e8dcc0; padding:24px; }
+    input, textarea, button { width:100%; margin:6px 0; padding:8px; }
+    button { background:#c9a227; border:0; cursor:pointer; font-weight:700; }
+    pre { background:#132038; padding:12px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <h1>LiveOps 后台（Sidecar）</h1>
+  <p>默认 <code>http://127.0.0.1:8787</code></p>
+  <label>公告</label>
+  <textarea id="msg" rows="3">限时贸易加成已开启</textarea>
+  <button onclick="announce()">发布公告</button>
+  <label>活动 JSON</label>
+  <textarea id="ev" rows="6">{
+  "id": "ev_ops_1",
+  "name": "运营投放",
+  "desc": "后台写入的活动",
+  "day_from": 1,
+  "day_to": 90,
+  "kind": "economy"
+}</textarea>
+  <button onclick="upsert()">写入活动</button>
+  <button onclick="load()">刷新</button>
+  <pre id="out"></pre>
+<script>
+const BASE = "http://127.0.0.1:8787";
+async function announce(){
+  const r = await fetch(BASE+"/ops/announce",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({msg:document.getElementById("msg").value})});
+  document.getElementById("out").textContent = await r.text();
+}
+async function upsert(){
+  let event; try { event = JSON.parse(document.getElementById("ev").value); } catch(e){ alert(e); return; }
+  const r = await fetch(BASE+"/ops/event_upsert",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({event})});
+  document.getElementById("out").textContent = await r.text();
+}
+async function load(){
+  const r = await fetch(BASE+"/ops/events");
+  document.getElementById("out").textContent = await r.text();
+}
+load();
+</script>
+</body>
+</html>

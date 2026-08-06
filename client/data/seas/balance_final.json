@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "version": "v1.0",
+    "note": "非冻洋海域数值终局（设计冻结切片）；冻洋仍以 islands.json+guards 为准"
+  },
+  "seas": {
+    "abyss": {
+      "name": "渊海",
+      "system": "tide",
+      "env_mod": {"tide": 1.20, "wind": 0.95, "flame": 1.0, "ironwall": 1.0},
+      "poi_crew_rate_mult": 1.0,
+      "daily_yield_mult": 1.1,
+      "boss_id": "AB_09",
+      "boss_hp_mult": 1.5,
+      "guard_scale": {"light": 1.0, "heavy": 1.2, "boss": 1.45}
+    },
+    "blaze": {
+      "name": "瀚海",
+      "system": "flame",
+      "env_mod": {"flame": 1.20, "tide": 0.95, "wind": 1.0, "ironwall": 0.95},
+      "poi_crew_rate_mult": 1.05,
+      "daily_yield_mult": 1.15,
+      "boss_id": "BL_09",
+      "boss_hp_mult": 1.45,
+      "guard_scale": {"light": 1.05, "heavy": 1.25, "boss": 1.45}
+    },
+    "tradewind": {
+      "name": "信风带",
+      "system": "wind",
+      "env_mod": {"wind": 1.20, "ironwall": 0.95, "flame": 1.0, "tide": 1.0},
+      "poi_crew_rate_mult": 1.0,
+      "daily_yield_mult": 1.05,
+      "boss_id": "TW_09",
+      "boss_hp_mult": 1.35,
+      "trade_mult": 1.2,
+      "guard_scale": {"light": 0.95, "heavy": 1.15, "boss": 1.35}
+    }
+  }
+}

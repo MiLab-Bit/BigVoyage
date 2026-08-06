@@ -1,0 +1,7 @@
+{
+  "program": "bv_commit.aleo",
+  "version": "0.1.0",
+  "description": "BigVoyage L1 battle commitment skeleton — field order locked to ResolveBattle payload",
+  "license": "UNLICENSED",
+  "dependencies": null
+}

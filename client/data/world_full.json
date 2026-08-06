@@ -1,0 +1,1101 @@
+{
+  "_meta": {
+    "version": "v0.3",
+    "count": 36,
+    "note": "全量 36 岛=4季x9；Demo 继续用 islands.json 的 12 岛冻洋切片"
+  },
+  "seas": {
+    "frozen": {
+      "name": "冻洋",
+      "system": "ironwall",
+      "env_bias": {
+        "season_mod": {
+          "ironwall": 1.15,
+          "flame": 0.95
+        }
+      }
+    },
+    "abyss": {
+      "name": "渊海",
+      "system": "tide",
+      "env_bias": {
+        "season_mod": {
+          "tide": 1.15,
+          "wind": 0.95
+        }
+      }
+    },
+    "blaze": {
+      "name": "瀚海",
+      "system": "flame",
+      "env_bias": {
+        "season_mod": {
+          "flame": 1.15,
+          "tide": 0.95
+        }
+      }
+    },
+    "tradewind": {
+      "name": "信风带",
+      "system": "wind",
+      "env_bias": {
+        "season_mod": {
+          "wind": 1.15,
+          "ironwall": 0.95
+        }
+      }
+    }
+  },
+  "islands": [
+    {
+      "id": "FR_01",
+      "name": "霜锚港",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 0,
+      "y": 0,
+      "tier": "start",
+      "guard_hp": 0,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_02",
+      "name": "铁砧湾",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 1,
+      "y": 0,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_03",
+      "name": "雾骨礁",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 2,
+      "y": 0,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_04",
+      "name": "寒铁崖",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 0,
+      "y": 1,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_05",
+      "name": "冰棱渡",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 1,
+      "y": 1,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_06",
+      "name": "黑曜岩岛",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 2,
+      "y": 1,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_07",
+      "name": "冻潮门",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 0,
+      "y": 2,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_08",
+      "name": "风啸角",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 1,
+      "y": 2,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "FR_09",
+      "name": "渊眼",
+      "sea": "frozen",
+      "sea_name": "冻洋",
+      "x": 2,
+      "y": 2,
+      "tier": "boss",
+      "guard_hp": 5000,
+      "poi": [
+        "boss",
+        "crew_ur"
+      ],
+      "owner": null,
+      "system_bias": "ironwall"
+    },
+    {
+      "id": "AB_01",
+      "name": "幽潮港",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 0,
+      "y": 4,
+      "tier": "start",
+      "guard_hp": 0,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_02",
+      "name": "螺号湾",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 1,
+      "y": 4,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_03",
+      "name": "沉钟礁",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 2,
+      "y": 4,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_04",
+      "name": "墨渊崖",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 0,
+      "y": 5,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_05",
+      "name": "浪骨渡",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 1,
+      "y": 5,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_06",
+      "name": "深压堡",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 2,
+      "y": 5,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_07",
+      "name": "裂潮门",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 0,
+      "y": 6,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_08",
+      "name": "涡流角",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 1,
+      "y": 6,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "AB_09",
+      "name": "海皇座",
+      "sea": "abyss",
+      "sea_name": "渊海",
+      "x": 2,
+      "y": 6,
+      "tier": "boss",
+      "guard_hp": 5000,
+      "poi": [
+        "boss",
+        "crew_ur"
+      ],
+      "owner": null,
+      "system_bias": "tide"
+    },
+    {
+      "id": "BL_01",
+      "name": "烬锚港",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 0,
+      "y": 8,
+      "tier": "start",
+      "guard_hp": 0,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_02",
+      "name": "赤帆湾",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 1,
+      "y": 8,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_03",
+      "name": "焦骨礁",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 2,
+      "y": 8,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_04",
+      "name": "熔铁崖",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 0,
+      "y": 9,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_05",
+      "name": "旱潮渡",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 1,
+      "y": 9,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_06",
+      "name": "火墙堡",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 2,
+      "y": 9,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_07",
+      "name": "焰门",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 0,
+      "y": 10,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_08",
+      "name": "热风角",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 1,
+      "y": 10,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "BL_09",
+      "name": "祝融眼",
+      "sea": "blaze",
+      "sea_name": "瀚海",
+      "x": 2,
+      "y": 10,
+      "tier": "boss",
+      "guard_hp": 5000,
+      "poi": [
+        "boss",
+        "crew_ur"
+      ],
+      "owner": null,
+      "system_bias": "flame"
+    },
+    {
+      "id": "TW_01",
+      "name": "翼锚港",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 0,
+      "y": 12,
+      "tier": "start",
+      "guard_hp": 0,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_02",
+      "name": "信风湾",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 1,
+      "y": 12,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_03",
+      "name": "羽骨礁",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 2,
+      "y": 12,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_04",
+      "name": "岚铁崖",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 0,
+      "y": 13,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_05",
+      "name": "云渡",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 1,
+      "y": 13,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_06",
+      "name": "疾翼堡",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 2,
+      "y": 13,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_07",
+      "name": "风门",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 0,
+      "y": 14,
+      "tier": "heavy",
+      "guard_hp": 2400,
+      "poi": [
+        "crew",
+        "ship",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_08",
+      "name": "追风角",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 1,
+      "y": 14,
+      "tier": "light",
+      "guard_hp": 800,
+      "poi": [
+        "crew",
+        "resource"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    },
+    {
+      "id": "TW_09",
+      "name": "天际眼",
+      "sea": "tradewind",
+      "sea_name": "信风带",
+      "x": 2,
+      "y": 14,
+      "tier": "boss",
+      "guard_hp": 5000,
+      "poi": [
+        "boss",
+        "crew_ur"
+      ],
+      "owner": null,
+      "system_bias": "wind"
+    }
+  ],
+  "adjacency": {
+    "FR_01": [
+      "FR_02",
+      "FR_04"
+    ],
+    "FR_02": [
+      "FR_01",
+      "FR_03",
+      "FR_05"
+    ],
+    "FR_03": [
+      "FR_02",
+      "FR_06"
+    ],
+    "FR_04": [
+      "FR_01",
+      "FR_05",
+      "FR_07"
+    ],
+    "FR_05": [
+      "FR_02",
+      "FR_04",
+      "FR_06",
+      "FR_08"
+    ],
+    "FR_06": [
+      "FR_03",
+      "FR_05",
+      "FR_09"
+    ],
+    "FR_07": [
+      "FR_04",
+      "FR_08"
+    ],
+    "FR_08": [
+      "FR_05",
+      "FR_07",
+      "FR_09"
+    ],
+    "FR_09": [
+      "FR_06",
+      "FR_08"
+    ],
+    "AB_01": [
+      "AB_02",
+      "AB_04"
+    ],
+    "AB_02": [
+      "AB_01",
+      "AB_03",
+      "AB_05"
+    ],
+    "AB_03": [
+      "AB_02",
+      "AB_06"
+    ],
+    "AB_04": [
+      "AB_01",
+      "AB_05",
+      "AB_07"
+    ],
+    "AB_05": [
+      "AB_02",
+      "AB_04",
+      "AB_06",
+      "AB_08"
+    ],
+    "AB_06": [
+      "AB_03",
+      "AB_05",
+      "AB_09"
+    ],
+    "AB_07": [
+      "AB_04",
+      "AB_08"
+    ],
+    "AB_08": [
+      "AB_05",
+      "AB_07",
+      "AB_09"
+    ],
+    "AB_09": [
+      "AB_06",
+      "AB_08"
+    ],
+    "BL_01": [
+      "BL_02",
+      "BL_04"
+    ],
+    "BL_02": [
+      "BL_01",
+      "BL_03",
+      "BL_05"
+    ],
+    "BL_03": [
+      "BL_02",
+      "BL_06"
+    ],
+    "BL_04": [
+      "BL_01",
+      "BL_05",
+      "BL_07"
+    ],
+    "BL_05": [
+      "BL_02",
+      "BL_04",
+      "BL_06",
+      "BL_08"
+    ],
+    "BL_06": [
+      "BL_03",
+      "BL_05",
+      "BL_09"
+    ],
+    "BL_07": [
+      "BL_04",
+      "BL_08"
+    ],
+    "BL_08": [
+      "BL_05",
+      "BL_07",
+      "BL_09"
+    ],
+    "BL_09": [
+      "BL_06",
+      "BL_08"
+    ],
+    "TW_01": [
+      "TW_02",
+      "TW_04"
+    ],
+    "TW_02": [
+      "TW_01",
+      "TW_03",
+      "TW_05"
+    ],
+    "TW_03": [
+      "TW_02",
+      "TW_06"
+    ],
+    "TW_04": [
+      "TW_01",
+      "TW_05",
+      "TW_07"
+    ],
+    "TW_05": [
+      "TW_02",
+      "TW_04",
+      "TW_06",
+      "TW_08"
+    ],
+    "TW_06": [
+      "TW_03",
+      "TW_05",
+      "TW_09"
+    ],
+    "TW_07": [
+      "TW_04",
+      "TW_08"
+    ],
+    "TW_08": [
+      "TW_05",
+      "TW_07",
+      "TW_09"
+    ],
+    "TW_09": [
+      "TW_06",
+      "TW_08"
+    ]
+  },
+  "guards": {
+    "FR_02": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_03": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_04": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_05": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_06": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_07": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_08": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "FR_09": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.35,
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ]
+    },
+    "AB_02": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_03": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_04": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_05": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_06": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_07": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_08": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "TIDE_R_01",
+        "TIDE_R_02",
+        "TIDE_SR_01"
+      ]
+    },
+    "AB_09": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.75,
+      "crew_ids": [
+        "TIDE_UR_01",
+        "TIDE_SSR_01",
+        "TIDE_SR_01",
+        "IRON_SSR_01",
+        "WIND_SSR_01"
+      ]
+    },
+    "BL_02": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_03": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_04": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_05": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_06": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_07": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_08": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "FLAME_R_01",
+        "FLAME_R_02",
+        "FLAME_SR_01"
+      ]
+    },
+    "BL_09": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.7,
+      "crew_ids": [
+        "FLAME_UR_01",
+        "FLAME_SSR_01",
+        "FLAME_SR_01",
+        "IRON_SSR_01",
+        "WIND_SSR_01"
+      ]
+    },
+    "TW_02": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_03": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_04": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_05": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_06": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_07": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.15,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_08": {
+      "ship_id": "SHIP_RAFT",
+      "hp_mult": 1.0,
+      "crew_ids": [
+        "WIND_R_01",
+        "WIND_R_02",
+        "WIND_SR_01"
+      ]
+    },
+    "TW_09": {
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.65,
+      "crew_ids": [
+        "WIND_UR_01",
+        "WIND_SSR_01",
+        "WIND_SR_01",
+        "TIDE_SSR_01",
+        "FLAME_SSR_01"
+      ]
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "images": [
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\env\\env_boot_frozen.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\env\\env_map_frozen_sea.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\env\\env_battle_deck.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\icons\\icon_sys_flame.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\icons\\icon_sys_ironwall.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\icons\\icon_sys_wind.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\icons\\icon_sys_tide.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\ui\\ui_panel_dark.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\ui\\ui_card_frame.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\map\\island_marker.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\ships\\ship_raft.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\ships\\ship_iron.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\ships\\ship_wind.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_FLAME_R_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_FLAME_R_02_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_FLAME_SR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_FLAME_SSR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_FLAME_UR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_IRON_R_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_IRON_R_02_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_IRON_SR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_IRON_SSR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_IRON_UR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_WIND_R_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_WIND_R_02_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_WIND_SR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_WIND_SSR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_WIND_UR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_TIDE_R_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_TIDE_R_02_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_TIDE_SR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_TIDE_SSR_01_bust.jpg"
+    },
+    {
+      "ok": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\art\\characters\\char_TIDE_UR_01_bust.jpg"
+    }
+  ],
+  "music": [
+    {
+      "ok": true,
+      "skipped": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\audio\\music\\bgm_boot.mp3"
+    },
+    {
+      "ok": true,
+      "skipped": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\audio\\music\\bgm_map_frozen.mp3"
+    },
+    {
+      "ok": true,
+      "skipped": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\audio\\music\\bgm_battle.mp3"
+    },
+    {
+      "ok": true,
+      "skipped": true,
+      "file": "C:\\Users\\Administrator\\Desktop\\大航海\\client\\assets\\audio\\music\\bgm_victory.mp3"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "_meta": {"version": "v0.1", "beat": "6-18-30-30-6", "days": 90},
+  "seasons": {
+    "S1": {"name": "冻洋·铁壁", "sea": "frozen", "system": "ironwall", "islands": 12},
+    "S2": {"name": "渊海·潮汐", "sea": "abyss", "system": "tide", "islands": 12},
+    "S3": {"name": "瀚海·烈焰", "sea": "blaze", "system": "flame", "islands": 12},
+    "S4": {"name": "信风带·疾风", "sea": "tradewind", "system": "wind", "islands": 12}
+  }
+}

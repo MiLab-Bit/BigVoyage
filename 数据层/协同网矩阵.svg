@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect x="0" y="0" width="680" height="520" fill="#f7f8fa"/>
+  <text x="340" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2430">四体系协同网矩阵</text>
+  <text x="340" y="56" text-anchor="middle" font-size="12" fill="#666">实线=克制+30% (顺环) ｜ 虚线=跨体系 combo ｜ 节点内=体系内 chain</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- combo chords (dashed, behind nodes) -->
+  <line x1="340" y1="96" x2="584" y2="264" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.7"/>
+  <line x1="96" y1="264" x2="340" y2="432" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.7"/>
+  <text x="470" y="168" font-size="13" fill="#c0392b" font-weight="bold">火墙 (烧+扛)</text>
+  <text x="150" y="368" font-size="13" fill="#2980b9" font-weight="bold">锁定爆发 (控+打)</text>
+
+  <!-- ring arrows (+30% counter) -->
+  <path d="M380,120 Q520,120 548,236" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M548,300 Q600,380 372,432" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M300,400 Q140,440 132,300" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M132,228 Q70,160 304,120" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="556" y="150" font-size="12" fill="#333">+30%克制</text>
+  <text x="556" y="360" font-size="12" fill="#333">+30%克制</text>
+  <text x="96" y="430" font-size="12" fill="#333">+30%克制</text>
+  <text x="120" y="110" font-size="12" fill="#333">+30%克制</text>
+
+  <!-- nodes -->
+  <circle cx="340" cy="96" r="46" fill="#e8553a"/>
+  <circle cx="584" cy="264" r="46" fill="#6b7785"/>
+  <circle cx="340" cy="432" r="46" fill="#2f9e5e"/>
+  <circle cx="96" cy="264" r="46" fill="#2f7fe0"/>
+
+  <text x="340" y="92" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">烈焰</text>
+  <text x="340" y="110" text-anchor="middle" font-size="11" fill="#fff">flame</text>
+  <text x="584" y="260" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">铁壁</text>
+  <text x="584" y="278" text-anchor="middle" font-size="11" fill="#fff">ironwall</text>
+  <text x="340" y="428" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">疾风</text>
+  <text x="340" y="446" text-anchor="middle" font-size="11" fill="#fff">wind</text>
+  <text x="96" y="260" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">潮汐</text>
+  <text x="96" y="278" text-anchor="middle" font-size="11" fill="#fff">tide</text>
+
+  <!-- system-internal chain labels -->
+  <text x="300" y="60" font-size="12" fill="#e8553a" font-weight="bold">互燃</text>
+  <text x="624" y="248" font-size="12" fill="#6b7785" font-weight="bold">叠甲</text>
+  <text x="300" y="470" font-size="12" fill="#2f9e5e" font-weight="bold">抢速</text>
+  <text x="20" y="248" font-size="12" fill="#2f7fe0" font-weight="bold">控链</text>
+
+  <!-- legend -->
+  <line x1="40" y1="492" x2="70" y2="492" stroke="#333" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="76" y="496" font-size="12" fill="#333">克制 +30%（PVP 互克）</text>
+  <line x1="250" y1="492" x2="282" y2="492" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <text x="288" y="496" font-size="12" fill="#333">combo（同队协同：反制即协同）</text>
+</svg>

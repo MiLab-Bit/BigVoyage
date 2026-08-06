@@ -1,0 +1,110 @@
+{
+  "_meta": {
+    "version": "v0.3",
+    "note": "battle/boss/season 带 drop_mult/guard_mult/gvg_loot_mult，OpsDirector 真生效"
+  },
+  "events": [
+    {
+      "id": "ev_drift_onboard",
+      "name": "漂流启航",
+      "desc": "第 1–6 日：教学岛保护窗，熟悉出航/POI/编队。",
+      "day_from": 1,
+      "day_to": 6,
+      "kind": "onboarding",
+      "phase": "drift"
+    },
+    {
+      "id": "ev_awaken_restraint",
+      "name": "克制觉醒",
+      "desc": "第 7–24 日：战报克制高亮；POI 船员掉率×1.15；轻护卫。",
+      "day_from": 7,
+      "day_to": 24,
+      "kind": "battle",
+      "phase": "awaken",
+      "drop_mult": 1.15,
+      "guard_mult": 0.95
+    },
+    {
+      "id": "ev_expand_trade",
+      "name": "扩张商路",
+      "desc": "第 25–54 日：贸易净利 ×1.08；鼓励三角航线与占港。",
+      "day_from": 25,
+      "day_to": 54,
+      "kind": "economy",
+      "mult": 1.08,
+      "phase": "expand",
+      "risk_mult": 0.92
+    },
+    {
+      "id": "ev_abyss_tide_boost",
+      "name": "渊海潮涌",
+      "desc": "渊海航线额外加成（需解锁 abyss）；贸易×1.06。",
+      "day_from": 30,
+      "day_to": 50,
+      "kind": "economy",
+      "mult": 1.06,
+      "sea": "abyss",
+      "phase": "expand",
+      "risk_mult": 0.9
+    },
+    {
+      "id": "ev_blaze_ash_market",
+      "name": "瀚海灰烬市",
+      "desc": "瀚海（blaze）香料/铁货溢价窗口；贸易×1.07。",
+      "day_from": 35,
+      "day_to": 55,
+      "kind": "economy",
+      "mult": 1.07,
+      "sea": "blaze",
+      "phase": "expand"
+    },
+    {
+      "id": "ev_tradewind_monsoon",
+      "name": "信风季风",
+      "desc": "信风带运费风险下调窗口；贸易×1.1。",
+      "day_from": 40,
+      "day_to": 60,
+      "kind": "economy",
+      "mult": 1.1,
+      "sea": "tradewind",
+      "phase": "expand",
+      "risk_mult": 0.8
+    },
+    {
+      "id": "ev_contend_gvg",
+      "name": "联航征伐周",
+      "desc": "第 55–70 日：GVG 战利品×1.2；守卫×1.05；鼓励联盟突袭。",
+      "day_from": 55,
+      "day_to": 70,
+      "kind": "battle",
+      "phase": "contend",
+      "gvg_loot_mult": 1.2,
+      "guard_mult": 1.05,
+      "drop_mult": 1.1
+    },
+    {
+      "id": "ev_contend_boss",
+      "name": "海域终核窗",
+      "desc": "第 61–84 日：Boss 岛守卫×1.15；Boss 岛 POI 掉率×1.35。",
+      "day_from": 61,
+      "day_to": 84,
+      "kind": "boss",
+      "phase": "contend",
+      "boss_islands": ["FR_12", "AB_09", "BL_09", "TW_09"],
+      "guard_mult": 1.15,
+      "drop_mult": 1.35
+    },
+    {
+      "id": "ev_settle_preview",
+      "name": "赛季结算预告",
+      "desc": "第 85–90 日：掉率×1.25 清点窗；守卫回落×0.9。",
+      "day_from": 85,
+      "day_to": 90,
+      "kind": "season",
+      "phase": "settle",
+      "drop_mult": 1.25,
+      "guard_mult": 0.9,
+      "gvg_loot_mult": 1.1
+    }
+  ]
+}

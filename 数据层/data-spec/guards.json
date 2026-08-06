@@ -1,0 +1,115 @@
+{
+  "guards": {
+    "FR_01": {
+      "crew_ids": [],
+      "ship_id": "SHIP_RAFT",
+      "note": "出生岛无守卫",
+      "hp_mult": 1.0
+    },
+    "FR_02": {
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "IRON_SR_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_03": {
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_R_02",
+        "WIND_R_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_04": {
+      "crew_ids": [
+        "IRON_R_01",
+        "IRON_SR_01",
+        "IRON_SSR_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_05": {
+      "crew_ids": [
+        "IRON_R_02",
+        "IRON_SR_01",
+        "TIDE_R_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_06": {
+      "crew_ids": [
+        "IRON_SSR_01",
+        "IRON_SR_01",
+        "IRON_R_01",
+        "IRON_R_02",
+        "FLAME_R_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.35
+    },
+    "FR_07": {
+      "crew_ids": [
+        "IRON_R_01",
+        "WIND_R_02",
+        "IRON_SR_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_08": {
+      "crew_ids": [
+        "IRON_R_02",
+        "IRON_SSR_01",
+        "TIDE_R_02"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_09": {
+      "crew_ids": [
+        "IRON_SSR_01",
+        "IRON_SR_01",
+        "IRON_UR_01",
+        "IRON_R_01",
+        "WIND_R_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.2
+    },
+    "FR_10": {
+      "crew_ids": [
+        "IRON_SR_01",
+        "IRON_R_01",
+        "IRON_R_02"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_11": {
+      "crew_ids": [
+        "IRON_R_01",
+        "WIND_SR_01",
+        "IRON_SR_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.0
+    },
+    "FR_12": {
+      "crew_ids": [
+        "IRON_UR_01",
+        "IRON_SSR_01",
+        "IRON_SR_01",
+        "TIDE_SSR_01",
+        "WIND_SSR_01"
+      ],
+      "ship_id": "SHIP_IRON",
+      "hp_mult": 1.8
+    }
+  }
+}

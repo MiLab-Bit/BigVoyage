@@ -1,0 +1,3 @@
+# Godot 二进制体积大，本机下载即可（见 README）
+godot/
+*.zip

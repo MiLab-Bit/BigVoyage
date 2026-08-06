@@ -1,0 +1,49 @@
+﻿# Godot / Git
+.godot/
+*.translation
+export_presets.cfg
+*.import
+!**/icon.svg
+!**/icon.svg.import
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
+
+# Local saves / dumps
+*.log
+user://
+
+# Dependencies
+**/node_modules/
+__pycache__/
+*.pyc
+
+# Local secrets (never commit)
+client/config/llm.local.json
+*.local.json
+chain/wallet-bridge/dev_account.json
+**/wallet_dev.json
+**/*private*key*
+**/*.pem
+
+# Sidecar runtime noise
+chain/sidecar/ops_state.json
+chain/sidecar/testdata/commit_*.json
+!chain/sidecar/testdata/poseidon8_vectors.json
+chain/sidecar/*.out.log
+chain/sidecar/*.err.log
+chain/wallet-bridge/*.out.log
+chain/wallet-bridge/*.err.log
+
+*.err
+*.out.log*
+chain/sidecar/testdata/exec.json
+
+# Local toolchains / binaries (fetch separately)
+tools/leo/leo.exe
+tools/leo/*.exe
+*.exe

@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "version": "v0.1",
+    "sea": "冻洋(north, 高加索·铁壁体系)",
+    "count": 12,
+    "note": "demo 切片海域，12 岛。review 建议 demo 用冻洋因铁壁体系克制最易讲清。坐标为网格 (x,y)，相邻岛可顺流航行。"
+  },
+  "sea_theme": {
+    "name": "冻洋",
+    "dominant_system": "ironwall",
+    "env_bias": {"windDir": "逆风", "tidePhase": "平潮", "season_mod": {"ironwall": 1.15, "flame": 0.95}}
+  },
+  "islands": [
+    {"id":"FR_01","name":"霜锚港","x":0,"y":0,"tier":"start","guard_hp":0,"poi":["crew","resource"],"owner":null,"note":"出生岛，无守卫"},
+    {"id":"FR_02","name":"铁砧湾","x":1,"y":0,"tier":"light","guard_hp":800,"poi":["crew","resource"],"owner":null},
+    {"id":"FR_03","name":"雾骨礁","x":2,"y":0,"tier":"light","guard_hp":800,"poi":["resource"],"owner":null},
+    {"id":"FR_04","name":"寒铁崖","x":0,"y":1,"tier":"light","guard_hp":800,"poi":["crew","ship"],"owner":null},
+    {"id":"FR_05","name":"冰棱渡","x":1,"y":1,"tier":"light","guard_hp":800,"poi":["resource"],"owner":null},
+    {"id":"FR_06","name":"黑曜岩岛","x":2,"y":1,"tier":"heavy","guard_hp":2400,"poi":["crew","ship","resource"],"owner":null},
+    {"id":"FR_07","name":"断桅滩","x":3,"y":0,"tier":"light","guard_hp":800,"poi":["crew"],"owner":null},
+    {"id":"FR_08","name":"极光哨","x":3,"y":1,"tier":"light","guard_hp":800,"poi":["resource"],"owner":null},
+    {"id":"FR_09","name":"冻潮门","x":1,"y":2,"tier":"heavy","guard_hp":2400,"poi":["crew","resource"],"owner":null},
+    {"id":"FR_10","name":"玄冰冢","x":2,"y":2,"tier":"light","guard_hp":800,"poi":["ship"],"owner":null},
+    {"id":"FR_11","name":"风啸角","x":3,"y":2,"tier":"light","guard_hp":800,"poi":["crew","resource"],"owner":null},
+    {"id":"FR_12","name":"渊眼","x":3,"y":3,"tier":"boss","guard_hp":5000,"poi":["boss","crew_ur"],"owner":null,"note":"海域 Boss 岛，掉落 UR 概率提升"}
+  ]
+}

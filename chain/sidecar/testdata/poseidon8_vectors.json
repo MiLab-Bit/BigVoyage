@@ -1,0 +1,25 @@
+{
+  "hash_alg": "poseidon8_snarkvm_v1",
+  "leo_version": "4.4.0",
+  "field_modulus": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+  "note": "Authoritative vectors from `leo run commit_battle` (Leo 4.4.0). soft_v1 obsolete.",
+  "vectors": [
+    {
+      "id": "v0_smoke",
+      "inputs": {
+        "ruleset_h": "1field",
+        "fleets_h": "2field",
+        "env_h": "3field",
+        "seed": "42u64",
+        "winner": "1u8",
+        "rounds": "3u8",
+        "log_root": "4field",
+        "season": "1u32"
+      },
+      "expected": {
+        "commit": "3666062960151941792496940525353656429573604703520808160253605323905042148471",
+        "status": "frozen"
+      }
+    }
+  ]
+}
